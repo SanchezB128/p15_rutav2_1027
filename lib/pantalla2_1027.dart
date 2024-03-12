@@ -8,19 +8,29 @@ class Pantalla2_1027 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla2 Sanchez1027"),
-        backgroundColor: Colors.orange,
+        title: Text("Container Sanchez1027"),
+        backgroundColor: Color(0xff001d0b),
       ),
       body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () {}, //si preciona boton
-            child: Text("Pantalla"),
-          )
-        ],
-      )),
+        child: Container(
+          color: Color(0xff5e5c00),
+          width: double.infinity,
+          height: 300,
+          child: Card(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            color: Color(0xff001d0b),
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                'Container Sanchez1027',
+                style: TextStyle(fontSize: 30, color: Color(0xfffcff0c)),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   } //fin widget
 } //FIN Pantalla2_1027
