@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanchez1027/pantalla3_1027.dart';
 import 'package:sanchez1027/pantalla2_1027.dart';
 import 'package:sanchez1027/pantalla1_1027.dart';
 import 'package:sanchez1027/pantallainicial_1027.dart';
@@ -17,6 +18,7 @@ class MiApp1027 extends StatelessWidget {
         "/": (context) => PantallaInicial_1027(),
         "/Pantalla1_1027": (context) => const Pantalla1_1027(),
         "/Pantalla2_1027": (context) => const Pantalla2_1027(),
+        "/Pantalla3_1027": (context) => const Pantalla3_1027(),
       }, //fun rutas
     );
   } //fin widget
